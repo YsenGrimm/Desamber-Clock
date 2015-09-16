@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Desamber Clock</string>
+
+    <string name="appwidget_text">.beat</string>
+
+    <string name="fixed_calendar_year">2015</string>
+    <string name="fixed_calendar_mont">Desamber</string>
+    <string name="fixed_calendar_day">28</string>
+    <string name="fixed_calendar_day_name">Sun</string>
+</resources>

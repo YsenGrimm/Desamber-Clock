@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+
+    <TextView android:id="@+id/dot_beat_text" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" android:text="@string/appwidget_text"
+        android:textColor="#FAFAFA" android:textSize="36sp" android:textStyle="bold"
+        android:layout_margin="2dp" android:contentDescription="@string/appwidget_text"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif-medium" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="8dp">
+
+        <TextView android:id="@+id/fixed_calendar_year" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" android:text="@string/fixed_calendar_year"
+            android:textColor="#FAFAFA" android:textSize="16sp" android:textStyle="bold"
+            android:contentDescription="@string/appwidget_text"
+            android:layout_toLeftOf="@+id/fixed_calendar_month"
+            android:layout_alignParentEnd="false"
+            android:layout_margin="2dp"
+            android:fontFamily="serif" />
+
+        <TextView android:id="@+id/fixed_calendar_month" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" android:text="@string/fixed_calendar_mont"
+            android:textColor="#FAFAFA" android:textSize="16sp" android:textStyle="bold"
+            android:layout_margin="2dp" android:contentDescription="@string/appwidget_text"
+            android:layout_toLeftOf="@+id/fixed_calendar_day_name"
+            android:fontFamily="serif" />
+
+        <TextView android:id="@+id/fixed_calendar_day" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" android:text="@string/fixed_calendar_day"
+            android:textColor="#FAFAFA" android:textSize="16sp" android:textStyle="bold"
+            android:layout_margin="2dp" android:contentDescription="@string/appwidget_text"
+            android:layout_toRightOf="@+id/fixed_calendar_day_name"
+            android:fontFamily="serif" />
+
+        <TextView android:id="@+id/fixed_calendar_day_name" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" android:text="@string/fixed_calendar_day_name"
+            android:textColor="#FAFAFA" android:textSize="16sp" android:textStyle="bold"
+            android:layout_margin="2dp" android:contentDescription="@string/appwidget_text"
+            android:fontFamily="serif" />
+    </RelativeLayout>
+
+</RelativeLayout>
